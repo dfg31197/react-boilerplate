@@ -1,0 +1,15 @@
+@import '../shared/styles/main.scss';
+
+.dashboard {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    &__content-container {
+        margin-top: 3.5rem;
+        width: 100%;
+        background-color: $background;
+    }
+}

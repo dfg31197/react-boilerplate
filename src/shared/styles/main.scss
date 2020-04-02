@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $textPrimary;
+}
+
+body {
+    background-color: $background;
+}

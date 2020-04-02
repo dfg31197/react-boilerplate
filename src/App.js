@@ -2,13 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Login from './auth/login/login';
+import Auth from './auth/auth-container';
 import Dashboard from './containers/dashboard';
 function App() {
   return (
     <BrowserRouter>
     <Switch>
-      <Route path="/login" component={Login} />
+      <Route path="/auth" component={Auth} />
       <Route path="/dashboard" component={Dashboard} />
       </Switch>
     </BrowserRouter>

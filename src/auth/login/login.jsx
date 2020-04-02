@@ -1,14 +1,17 @@
 import React from 'react';
 import './login.scss';
 
+const styles = {
+    wrapper: 'login__wrapper',
+    contentContainer: 'login__content-container',
+}
+
 class Login extends React.Component {
 
 
     render() {
         return (
-            <h1>
-            Login Page
-        </h1>
+            <div className={styles.wrapper}>Login</div>
         )
     }
 }

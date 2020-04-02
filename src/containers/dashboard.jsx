@@ -8,6 +8,10 @@ const styles = {
   contentContainer: "dashboard__content-container"
 };
 class Dashboard extends React.Component {
+
+    componentDidMount() {
+        // TODO: get user details here
+    }
   render() {
     return (
       <div className={styles.wrapper}>

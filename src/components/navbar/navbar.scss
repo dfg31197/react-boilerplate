@@ -18,6 +18,17 @@
     }
 
     &__content-container {
+        display: flex;
+        align-items: center;
         // position: fixed;
+    }
+
+    &__sidebar-toggle-button {
+        padding: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
     }
 }

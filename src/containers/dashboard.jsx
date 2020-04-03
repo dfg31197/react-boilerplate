@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
     isSidebarExpanded: false,
   }
 
-  toggleSideBar() {
+  toggleSidebar = () => {
     this.setState((prev) => ({
       isSidebarExpanded: !prev.isSidebarExpanded,
     }));
@@ -28,8 +28,8 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className={styles.wrapper}>
-        <Navbar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
-        <Sidebar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
+        <Navbar toggleSidebar={this.toggleSidebar} isSidebarExpanded={this.state.isSidebarExpanded} />
+        <Sidebar toggleSidebar={this.toggleSidebar} isSidebarExpanded={this.state.isSidebarExpanded} />
         <div className={styles.contentContainer}>Dashboard Container</div>
       </div>
     );

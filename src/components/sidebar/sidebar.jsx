@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
           [styles.sidebarActive]: this.props.isSidebarExpanded
         })}
       >
-        <div className={styles.contentContainer}>Niccep</div>
+        <div className={styles.contentContainer}>Sidebar</div>
       </div>
     );
   }

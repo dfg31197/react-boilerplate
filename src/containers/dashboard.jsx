@@ -30,7 +30,7 @@ class Dashboard extends React.Component {
       <div className={styles.wrapper}>
         <Navbar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
         <Sidebar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
-        <div className={styles.contentContainer}>Dashboard</div>
+        <div className={styles.contentContainer}>Dashboard Container</div>
       </div>
     );
   }

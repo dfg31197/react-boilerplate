@@ -10,15 +10,12 @@ const styles = {
 };
 
 class Sidebar extends React.Component {
-  state = {
-    isSidebarActive: true
-  };
   render() {
     return (
       <div
         className={classNames({
           [styles.wrapper]: true,
-          [styles.sidebarActive]: this.state.isSidebarActive
+          [styles.sidebarActive]: this.props.isSidebarExpanded
         })}
       >
         <div className={styles.contentContainer}>Niccep</div>

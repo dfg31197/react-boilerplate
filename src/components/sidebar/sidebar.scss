@@ -19,5 +19,8 @@
 
     &__content-container {
         position: fixed;
+        height: 100%;
+        width: inherit;
+        margin-top: 3.5rem;
     }
 }

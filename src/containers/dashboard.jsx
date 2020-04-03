@@ -11,16 +11,25 @@ const styles = {
   contentContainer: "dashboard__content-container"
 };
 class Dashboard extends React.Component {
+  state = {
+    isSidebarExpanded: false,
+  }
 
+  toggleSideBar() {
+    this.setState((prev) => ({
+      isSidebarExpanded: !prev.isSidebarExpanded,
+    }));
+  }
     componentDidMount() {
         // TODO: get user details here
-        axiosClient.get('googleSheets/getListOfDataSets').then((r) => {console.log('then')}).catch((err) =>{ console.log('catcg', err)});
+        // axiosClient.get('googleSheets/getListOfDataSets').then((r) => {console.log('then')}).catch((err) =>{ console.log('catcg', err)});
     }
+
   render() {
     return (
       <div className={styles.wrapper}>
-        <Navbar />
-        <Sidebar />
+        <Navbar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
+        <Sidebar toggleSideBar={this.toggleSideBar} isSidebarExpanded={this.state.isSidebarExpanded} />
         <div className={styles.contentContainer}>Dashboard</div>
       </div>
     );

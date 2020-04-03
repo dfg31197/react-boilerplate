@@ -16,7 +16,7 @@ class Navbar extends React.Component {
         return (
             <div className={styles.wrapper}>
                 <div className={styles.contentContainer}>
-                    Niccep
+             
                     </div>
             </div>
         )
